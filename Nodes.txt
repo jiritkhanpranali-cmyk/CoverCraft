@@ -1,0 +1,87 @@
+# CoverCraft Execution Flow
+
+                START
+                  |
+                  |
+                  v
+    User Opens Streamlit Application
+                  |
+                  |
+                  v
+          User Authentication
+                  |
+        +---------+---------+
+        |                   |
+        v                   v
+      Signup              Login
+        |                   |
+        +---------+---------+
+                  |
+                  |
+                  v
+          Home Dashboard
+                  |
+                  |
+                  v
+        Upload Resume PDF
+                  |
+                  |
+                  v
+          Resume Parser
+                  |
+                  |
+                  v
+    Extract Candidate Information
+                  |
+                  |
+                  v
+       Enter Job Description
+                  |
+                  |
+                  v
+          Resume Analyzer
+                  |
+        +---------+---------+
+        |                   |
+        v                   v
+ Calculate ATS Score   Skill Analysis
+                            |
+              +-------------+-------------+
+              |                           |
+              v                           v
+      Find Matched Skills        Find Missing Skills
+              |                           |
+              +-------------+-------------+
+                            |
+                            v
+              Generate Improvement Suggestions
+                            |
+                            |
+                            v
+                 Create AI Prompt
+                            |
+                            |
+                            v
+             Send Prompt to LLM Model
+                  (Ollama + Llama 3)
+                            |
+                            |
+                            v
+          Generate Personalized Cover Letter
+                            |
+                            |
+                            v
+                 Display Generated Output
+                            |
+             +--------------+--------------+
+             |                             |
+             v                             v
+        Download PDF/DOCX          Save Letter History
+                                             |
+                                             |
+                                             v
+                                    Database Storage
+                                             |
+                                             |
+                                             v
+                                            END
