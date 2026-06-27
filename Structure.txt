@@ -1,0 +1,59 @@
+CoverCraft Project Structure
+
+CoverCraft/
+│
+├── app.py
+│   Main Streamlit application file
+│
+├── generator/
+│   ├── prompt_builder.py
+│   └── letter_generator.py
+│
+│   Handles AI prompt creation and cover letter generation.
+│
+├── resume_parser/
+│   ├── parser.py
+│   ├── extractor.py
+│   ├── skills.py
+│   └── constants.py
+│
+│   Extracts resume information and skills.
+│
+├── analyzer/
+│   ├── matcher.py
+│   ├── score.py
+│   └── suggestions.py
+│
+│   Performs ATS score calculation and resume analysis.
+│
+├── job_assistant/
+│   ├── job_matcher.py
+│   └── recommender.py
+│
+│   Compares multiple job descriptions.
+│
+├── authentication/
+│   └── auth.py
+│
+│   Handles user signup and login.
+│
+├── database/
+│   ├── database.py
+│   └── users.db
+│
+│   Stores user information and generated letters.
+│
+├── utils/
+│   ├── pdf_export.py
+│   └── docx_export.py
+│
+│   Generates downloadable documents.
+│
+├── assets/
+│   └── style.css
+│
+│   Contains UI styling.
+│
+├── requirements.txt
+│
+└── README.md
