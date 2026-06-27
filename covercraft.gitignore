@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+
+users.db
+database/users.db
+
+.env
+
+.venv/
+venv/
+
+Cover_Letter.docx
+cover_letter.pdf
+
+*.log
